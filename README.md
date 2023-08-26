@@ -1,7 +1,7 @@
 Next.js Weather App
 This is a simple weather app built with Next.js that uses the OpenWeather free API.
 
-ScreenShot
+
 ![Screenshot_20230826_103926](https://github.com/i-m-Gaurav/NextJS-weatherApp/assets/68615047/a918a9b5-66bd-4718-9734-9cdccc095395)
 
 
