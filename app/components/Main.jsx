@@ -15,10 +15,15 @@ const Main = () => {
     }
   }, [initialLoad]);
 
+
+  // why API_KEY variable is not working
+  
   const fetchWeather = async (cityName) => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.NEXT_PUBLIC_OPEN_WEATHER_API_KEY}&units=metric`;
+    console.log("fetchWeather called with city name: ", cityName);
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.NEXT_PUBLIC_API_KEY}&units=metric`;
 
     try {
+      console.log("making a request to: ", url);
       const { data } = await axios.get(url);
       setWeather(data);
     } catch (error) {
